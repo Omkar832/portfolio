@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omkar's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project, .certificate, .skill-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+      transition: transform 0.3s ease;
+    }
+    .project:hover, .certificate:hover, .skill-card:hover {
+      transform: translateY(-5px);
+    }
+    .certificate a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    .certificate a:hover {
+      text-decoration: underline;
+      color: #ff00ff;
+    }
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .social-icons a {
+      color: #00ffff;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ff00ff;
+    }
+  </style>
+</head>
+<body>
+  <header class="center">
+    <h1>N Omkar</h1>
+    <p>Full Stack Developer | Data Analyst Enthusiast</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/omkarn04" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Omkar832" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:nomkar.rintu@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>BTech in Information Technology from VSSUT, with experience in full-stack .NET development and a strong interest in data visualization and analytics.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>C#, ASP.NET, ADO.NET, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <h3>Frontend Frameworks</h3>
+        <p>React.js, AngularJS</p>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>SQL, PL/SQL, Entity Framework</p>
+      </div>
+      <div class="skill-card">
+        <h3>Data Visualization</h3>
+        <p>Tableau, Power BI, Excel</p>
+      </div>
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <p>Python, C#, c++, java</p>
+      </div>
+      <div class="skill-card">
+        <h3>Mobile Development</h3>
+        <p>Android Studio, Kotlin</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="project">
+        <h3><a href="https://github.com/Omkar832/Employee-Attrition-Insights" target="_blank">Employee Attrition Insights (Tableau)</a></h3>
+        <p>Analyzed attrition factors to provide strategic retention insights using visualization tools.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/Omkar832/zomato-user-behavior-dashboard" target="_blank">Zomato Dashboard (Excel, Power BI)</a></h3>
+        <p>Built a dashboard analyzing user and restaurant metrics to aid business decisions.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/Omkar832" target="_blank">Agile Project Management System (.NET, SQL)</a></h3>
+        <p>Developed a secure, role-based web API following RESTful principles for managing projects.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/Omkar832/echomaster" target="_blank">Echo Master (Android, Kotlin)</a></h3>
+        <p>Music player app with media control and smooth user interaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <div class="certificate">
+        <h3><a href="https://drive.google.com/drive/folders/1vQoi_ruWueuhKvhejDrZ5Dn0KuFWg3qJ?usp=drive_link" target="_blank">Android Development - Internshala</a></h3>
+        <p>Completed in 2022</p>
+      </div>
+      <div class="certificate">
+        <h3><a href="https://drive.google.com/file/d/119yZaNBkacSkiVpOusaEEYW4RN2ooeUS/view?usp=drive_link" target="_blank">Python For Machine Learning - Great Learning</a></h3>
+        <p>Completed in 2022</p>
+      </div>
+      <div class="certificate">
+        <h3><a href="https://drive.google.com/file/d/1hSIcX91wXRyDMTEGnWPl60tq_tuJ4HDv/view?usp=drive_link" target="_blank">CCNAv7 - Cisco Networking Academy</a></h3>
+        <p>Completed in 2022</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Omkar N. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
